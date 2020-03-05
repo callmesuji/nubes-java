@@ -15,7 +15,7 @@ public class Factorial1 {
 
 	private static void fact(int num) {
 		int rev = 0;
-		while (num == 1) {
+		while (num == 0 || num == 1) {
 			System.out.println("you have entered one number :" + num);
 			break;
 		}
