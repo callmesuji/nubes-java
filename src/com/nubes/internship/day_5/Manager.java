@@ -36,7 +36,7 @@ public class Manager {
 				System.out.println("Enter The Id to Delete Contact :");
 				Integer cid = sc.nextInt();
 				if (cid != 0) {
-					list.remove(cid);
+					//list.remove(c);
 
 				}
 
