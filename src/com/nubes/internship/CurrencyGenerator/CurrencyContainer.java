@@ -1,5 +1,14 @@
 package com.nubes.internship.CurrencyGenerator;
 
+/*
+Create interface Currency with getCurrency method.Create classes India,USA,UK by implementing the
+Currency interface.Createclass CurrencyContainer,Currency getCurrency(String country)
+(Method return type Currency).getCurrency(string country) Based on the country name it must return
+particular country object. If country is not valid it should throw IllegalArgumentException.
+Create class CurrencyClient with main method and prompt user to enter country name. By using country name,
+get Currency object by invoking the CurrencyContainer getCurrency( ) without creating object of CurrencyContainer
+ and display the currency name by invoking getCurrency( ) Currency interface.*/
+
 import java.util.Scanner;
 
 public class CurrencyContainer {

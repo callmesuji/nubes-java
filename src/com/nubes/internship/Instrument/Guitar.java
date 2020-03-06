@@ -10,7 +10,7 @@ public class Guitar implements Instrument {
 
 	@Override
 	public String toString() {
-		return "" + play() + "]";
+		return "[" + play() + "]";
 	}
 
 }

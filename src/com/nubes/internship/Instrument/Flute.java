@@ -9,7 +9,7 @@ public class Flute implements Instrument {
 
 	@Override
 	public String toString() {
-		return "" + play() + "]";
+		return "[" + play() + "]";
 	}
 
 }

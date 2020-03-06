@@ -1,9 +1,6 @@
 package com.nubes.internship.Game;
 
 public class Car implements Game {
-
-	 
-
 	@Override
 	public String start() {
 		return "Car Started";

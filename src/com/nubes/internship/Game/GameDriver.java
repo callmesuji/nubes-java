@@ -1,6 +1,12 @@
 
 package com.nubes.internship.Game;
 
+/*Create an Interface Game which is having start,play,and stop methods.Create classes Car,Bike,Bicycle 
+*by implementing Game interface.Create an array of 10 Games.Generate 10 random numbers in the range 1 to 3.
+* If random number is 1–add Car,2-add Bike,3-add Bicyle objects to the array.Process the elements from the 
+* array and display details of each object.
+Hint:to generate the random number use Math class api.*/
+
 public class GameDriver {
 	public static void main(String[] args) {
 		Game g1 = new Car();
