@@ -2,11 +2,11 @@ package com.nubes.internship.day_4;
 
 public class Demo {
 	public static void main(String[] args) {
-		int num = 9845;
-		while (num > 9) {
-			int sum = num % 10 + num / 10;
-			num = sum;
-		}
-		System.out.println(num);
+		 int i=3;
+		 do{
+		    if(i<2)
+		       break;
+		    System.out.print(i--+" ");
+		 }while(2<3);
 	}
 }
