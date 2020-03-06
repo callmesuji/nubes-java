@@ -1,6 +1,7 @@
 package com.nubes.internship.listdemo;
 
 import java.util.ArrayList;
+
 import java.util.Iterator;
 
 public class ArrayListDemo {
@@ -25,7 +26,7 @@ public class ArrayListDemo {
 		ArrayList<String> list2 = new ArrayList<>();
 		list2.add("1001");
 		list2.add("1002");
-		//list2.add("1003");
+		// list2.add("1003");
 		list.removeAll(list2);
 		Iterator<String> itr2 = list.iterator();
 		while (itr2.hasNext()) {

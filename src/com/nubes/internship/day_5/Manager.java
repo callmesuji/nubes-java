@@ -33,8 +33,12 @@ public class Manager {
 				}
 				break;
 			case 3:
+				System.out.println("Enter The Id to Delete Contact :");
 				Integer cid = sc.nextInt();
-		//		List<Contact> list1 = service.deleteContact(cid);
+				if (cid != 0) {
+					list.remove(cid);
+
+				}
 
 			case 7:
 				sc.close();

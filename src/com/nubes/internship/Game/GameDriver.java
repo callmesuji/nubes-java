@@ -23,8 +23,10 @@ public class GameDriver {
 		int num = (int) (Math.ceil(Math.random() * 3));
 
 		Game[] arr = { g1, g2, g3, g4, g5, g6, g7, g8, g9, g10 };
-		System.out.println("Random Generated Number Is :" + num);
-
+		System.out.println("1.Car   2.Bike   3.Bicycle");
+		System.out.println("---------------------------------");
+		System.out.println("Random Number Generated Is : " + num);
+		System.out.println("---------------------------------");
 		for (Game g : arr) {
 			if (num == 1) {
 				if (g instanceof Car) {
