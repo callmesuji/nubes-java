@@ -1,13 +1,13 @@
 package com.nubes.internship.Instrument;
 /*
-Create an Interface Instrument which has play as a method. Create three classes from Instrument which is Piano, Flute, and Guitar. Override the play
+Create an Interface Instrument which has play as a method.
+ Create three classes from Instrument which is Piano, Flute, and Guitar. Override the play
 Method inside all three classes,  printing a message“Piano is playing pee peee peee ” for Piano 
 class“Flute is playing toot toot toot toot” for Flute class “Guitar is playing tin tin tin tin ” for Guitar class
 Create an array of 10 Instruments. Assign different type of instrument to Instrument reference. Check for the 
 polymorphic behavior of play method.*/
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class InstrumentDriver {

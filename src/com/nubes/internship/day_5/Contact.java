@@ -11,7 +11,7 @@ public class Contact {
 		if (this.cid == null) {
 			this.cid = IDGenerator.getNewId();
 		}
-		
+
 		this.name = name;
 		this.mobile = mobile;
 		this.city = city;

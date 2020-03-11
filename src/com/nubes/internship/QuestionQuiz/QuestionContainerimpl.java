@@ -10,7 +10,7 @@ public class QuestionContainerimpl implements QuestionContainer {
 	List<Question> list = new ArrayList<>();
 	{
 		Question q1 = new Question("java is  programming or platform ", "A. Programming ", "B. Platform ", "C.Both ",
-				"D.None of the above ", "A");
+				"D.None of the above ", "B");
 		Question q2 = new Question("Who won the first T20 World Cup? ", "A.SRI LANKA ", "B.USA ", "C.INDIA ",
 				"D.CANADA ", "C");
 		Question q3 = new Question("Which country has won the Cricket World Cup three times in a row? ",
@@ -44,8 +44,8 @@ public class QuestionContainerimpl implements QuestionContainer {
 	@Override
 	public void showResult() {
 		System.out.println("--------------------------------------");
-		System.out.println("Correct Answers Count Are :" + c_count);
-		System.out.println("Wrong Answers Count Are :" + w_count);
+		System.out.println("Correct Answers Count Are : " + c_count);
+		System.out.println("Wrong Answers Count Are : " + w_count);
 		System.out.println("--------------------------------------");
 
 	}
@@ -56,7 +56,7 @@ public class QuestionContainerimpl implements QuestionContainer {
 			System.out.println(q.getQuestion());
 			System.out.println(q.getOption1() + q.getOption2() + q.getOption3() + q.getOption4());
 			System.out.println();
-			System.out.println("Option is " + q.getAnswer());
+			System.out.println("Option Is " + q.getAnswer());
 			System.out.println("------------------------------------------------------------------");
 		}
 
