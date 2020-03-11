@@ -1,6 +1,6 @@
 package com.nubes.internship.day_5;
 
-import java.sql.Connection;
+import java.sql.Connection; 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -9,8 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ContactServiceJDBCImpl implements ContactService {
-	private static final String Add_Contact = "insert into contact(name,mobile,city,id) values(?,?,?,?))";
-	private static final String Delete_Contact = "create table contact(e_name varchar(200),e_mobno long,e_city varchar(200),e_id long)";
+	private static final String Add_Contact = "insert into contact(name,mobile,city,id) values(?,?,?,?)";
 
 	@Override
 	public Contact addContact(Contact contact) {
@@ -35,6 +34,8 @@ public class ContactServiceJDBCImpl implements ContactService {
 			contacts.add(contact);
 		} catch (Exception e) {
 			e.printStackTrace();
+		}finally {
+			dbUtil.close(con, pst);
 		}
 
 		return contact;

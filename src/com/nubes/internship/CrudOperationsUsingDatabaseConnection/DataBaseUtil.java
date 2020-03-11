@@ -1,4 +1,4 @@
-package com.nubes.internship.DataBase;
+package com.nubes.internship.CrudOperationsUsingDatabaseConnection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

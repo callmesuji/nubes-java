@@ -1,4 +1,4 @@
-package com.nubes.internship.DataBase;
+package com.nubes.internship.CrudOperationsUsingDatabaseConnection;
 
 public class IDGenerator {
 	private static Integer id = 1001;

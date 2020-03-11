@@ -1,4 +1,4 @@
-package com.nubes.internship.DataBase;
+package com.nubes.internship.CrudOperationsUsingDatabaseConnection;
 
 import java.sql.*;
 import java.sql.PreparedStatement;
@@ -70,9 +70,12 @@ public class EmployeeStat {
 			rs = st.executeQuery(EMP_INFO);
 			System.out.println("<<=----**----=>> YOU CHOOSE TO VIEW EMPLOYEES! <<=----**----=>>");
 			System.out.println();
+			System.out.println(" "+"  NAME      "+"   CITY        "+"             MOBILE NO    "+"           SALARY   ");
+			System.out.println("-----------------------------------------------------------------------------------");
 			while (rs.next()) {
-				System.out.println(rs.getString("name").toUpperCase() + " ||  " + rs.getString("city").toUpperCase()
-						+ " ||  " + rs.getString("mobile") + " ||  " + rs.getDouble("salary"));
+				System.out.println(" "+
+						rs.getString("name").toUpperCase() + "	   ||   " + rs.getString("city").toUpperCase()
+								+ "	  ||	" + rs.getString("mobile") + "	  ||   " + rs.getDouble("salary"));
 			}
 			System.out.println();
 		} catch (SQLException e) {
@@ -133,7 +136,6 @@ public class EmployeeStat {
 	}
 
 //	UPDATIG   EMPLOYEES  USING  NAME 															5
-//	private static final String UPD_EMP_NAME = "update employee set name = ?,city = ?,mobile ?,salary = ? where name = ?)"; // 5
 	public void UpdateEmployee(String name) {
 		Scanner sc = new Scanner(System.in);
 		Connection con = null;
@@ -172,7 +174,6 @@ public class EmployeeStat {
 	}
 
 //	UPDATIG   EMPLOYEES  USING  SALARY													6
-//	private static final String UPD_EMP_SALARY = "update employee set name = ?,city = ?,mobile ?,salary = ? where salary = ?)"; // 6
 
 	public void UpdateEmployee(Double sal) {
 		Scanner sc = new Scanner(System.in);

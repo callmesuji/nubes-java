@@ -1,8 +1,8 @@
-package com.nubes.internship.DataBase;
+package com.nubes.internship.CrudOperationsUsingDatabaseConnection;
 
 import java.util.Scanner;
 
-public class EmployeeCrud {
+public class CrupOperationsManager {
 	public static void main(String[] args) {
 		EmployeeStat obj = new EmployeeStat();
 		Scanner sc = new Scanner(System.in);

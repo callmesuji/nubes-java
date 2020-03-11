@@ -1,4 +1,4 @@
-package com.nubes.ipl2020;
+package com.nubes.internship.ipl2020;
 
 import java.sql.*;
 
