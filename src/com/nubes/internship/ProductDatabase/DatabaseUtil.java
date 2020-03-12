@@ -1,19 +1,14 @@
-package com.nubes.internship.day_5;
+package com.nubes.internship.ProductDatabase;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public enum DatabaseUtil {
 	obj;
 
-	public Connection getConnection() {
+	public Connection getconnection() {
 		Connection con = null;
 		try {
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/contact?autoReconnect=true&useSSL=false",
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/product?autoReconnect=true&useSSL=false",
 					"root", "root");
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -44,6 +39,7 @@ public enum DatabaseUtil {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+
 	}
 
 	public void close(Connection con, PreparedStatement pst) {

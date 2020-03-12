@@ -1,5 +1,6 @@
 package com.nubes.internship.day_5;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -27,78 +28,68 @@ public class Manager {
 				service.addContact(contact);
 				break;
 			case 2:
-				if (service.getContacts().isEmpty()) {
-					System.out.println("No Contacts To View Add Contacts");
-				} else {
-					List<Contact> list = service.getContacts();
-					for (Contact c : list) {
-						System.out.println(c.getCid() + " " + c.getName() + " " + c.getMobile() + " " + c.getCity());
-					}
-				}
+				service.getContacts();
 				break;
 			case 3:
-				if (service.getContacts().isEmpty()) {
-					System.out.println("No Contacts To Delete Add Contacts");
-				} else {
-					System.out.println("Enter The Id to Delete Contact :");
-					Integer id = sc.nextInt();
-					System.out.println(service.deleteContact(id));
-				}
+				System.out.println("Enter The Id To Delete Contact :");
+				int cid = sc.nextInt();
+				service.deleteContact(cid);
 				break;
 
 			case 4:
+				System.out.println("ENTER THE ID TO UPDATE CONTACT");
+				int id = sc.nextInt();
+				service.getContact(id);
+//				service.updateContact(id);
 
-				if (service.getContacts().isEmpty()) {
-					System.out.println("No Contact To Update Add Contacts");
-				} else {
-					System.out.println("Enter The Id To Update Contact :");
-					Integer u_id = sc.nextInt();
-					List<Contact> list1 = service.getContacts();
-					for (Contact c1 : list1) {
-						if (c1.getCid().equals(u_id)) {
-							System.out.println(service.updateContact(c1));
-							break;
-						}
-					}
-				}
-				break;
-			case 5:
-				service.sortByName();
-				break;
-			case 6:
-				if (service.getContacts().isEmpty()) {
-					System.out.println("No Contacts To Search By ID Add Contacts");
-				} else {
-
-					System.out.println("Enter The Id To Get Contact :");
-					Integer g_id = sc.nextInt();
-					if (g_id < 999) {
-						System.out.println("Enter Id above 1000");
-					}
-					List<Contact> g_list = service.getContacts();
-					for (Contact c1 : g_list) {
-						if (c1.equals(service.getContact(g_id))) {
-							System.out.println(c1);
-							break;
-						}
-					}
-				}
+//				List<Contact> contacts = new ArrayList<Contact>();
+//				for (Contact c1 : contacts) {
+//					if (c1.getCid().equals(id)) {
+//						service.updateContact(c1);
+//						break;
+//					} else {
+//						System.out.println("no id to update");
+//					}
+//				}
 
 				break;
+//			case 5:
+//				service.sortByName();
+//				break;
+//			case 6:
+//				if (service.getContacts().isEmpty()) {
+//					System.out.println("No Contacts To Search By ID Add Contacts");
+//				} else {
+//
+//					System.out.println("Enter The Id To Get Contact :");
+//					Integer g_id = sc.nextInt();
+//					if (g_id < 999) {
+//						System.out.println("Enter Id above 1000");
+//					}
+//					List<Contact> g_list = service.getContacts();
+//					for (Contact c1 : g_list) {
+//						if (c1.equals(service.getContact(g_id))) {
+//							System.out.println(c1);
+//							break;
+//						}
+//					}
+//				}
+//
+//				break;
 
-			case 7:
-				if (service.getContacts().isEmpty()) {
-					System.out.println("No Contacts To Search By Name Add Contacts");
-				} else {
-					System.out.println("Enter The Name To Get Contact : ");
-					String s_name = sc.nextLine();
-					List<Contact> name_list = service.search(s_name);
-					for (Contact name_contact : name_list) {
-						System.out.println(name_contact);
-					}
-				}
+//			case 7:
+//				if (service.getContacts().isEmpty()) {
+//					System.out.println("No Contacts To Search By Name Add Contacts");
+//				} else {
+//					System.out.println("Enter The Name To Get Contact : ");
+//					String s_name = sc.nextLine();
+//					List<Contact> name_list = service.search(s_name);
+//					for (Contact name_contact : name_list) {
+//						System.out.println(name_contact);
+//					}
+//				}
 
-				break;
+//				break;
 			case 8:
 				System.out.println("Exited Successfully");
 				sc.close();

@@ -1,10 +1,6 @@
 package com.nubes.internship.CrudOperationsUsingDatabaseConnection;
 
-import java.sql.*;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;  
 import java.util.Scanner;
 
 public class EmployeeStat {
@@ -24,8 +20,7 @@ public class EmployeeStat {
 		DataBaseUtil dbUtil = DataBaseUtil.obj;
 		try {
 			con = dbUtil.getconnection();
-			System.out.println("<<=----**----=>> YOU CHOOSE TO ADD EMPLOYEES! <<=----**----=>>");
-			System.out.println("successful");
+			System.out.println("<<=----**----=>> YOU  CHOOSE  TO  ADD  EMPLOYEES! <<=----**----=>>");
 			System.out.println("Enter Name :");
 			String name = sc.nextLine().toUpperCase();
 			System.out.println("Enter City :");
@@ -68,13 +63,14 @@ public class EmployeeStat {
 			con = dbUtil.getconnection();
 			st = con.createStatement();
 			rs = st.executeQuery(EMP_INFO);
-			System.out.println("<<=----**----=>> YOU CHOOSE TO VIEW EMPLOYEES! <<=----**----=>>");
+			System.out.println("<<=----**----=>> YOU   CHOOSE   TO   VIEW   EMPLOYEES! <<=----**----=>>");
 			System.out.println();
-			System.out.println(" "+"  NAME      "+"   CITY        "+"             MOBILE NO    "+"           SALARY   ");
+			System.out.println(
+					" " + "  NAME      " + "   CITY        " + "             MOBILE NO    " + "           SALARY   ");
 			System.out.println("-----------------------------------------------------------------------------------");
 			while (rs.next()) {
-				System.out.println(" "+
-						rs.getString("name").toUpperCase() + "	   ||   " + rs.getString("city").toUpperCase()
+				System.out.println(
+						" " + rs.getString("name").toUpperCase() + "	   ||   " + rs.getString("city").toUpperCase()
 								+ "	  ||	" + rs.getString("mobile") + "	  ||   " + rs.getDouble("salary"));
 			}
 			System.out.println();
@@ -98,7 +94,7 @@ public class EmployeeStat {
 			pst = con.prepareStatement(DEL_EMP_NAME);
 			pst.setString(1, ename.toUpperCase());
 			int j = pst.executeUpdate();
-			if (j != 0) {
+			if (j != 0) { //==1
 				System.out.println("Successfully Deleted");
 				System.out.println();
 			} else {

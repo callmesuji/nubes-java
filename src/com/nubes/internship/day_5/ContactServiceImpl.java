@@ -37,20 +37,20 @@ public class ContactServiceImpl implements ContactService {
 		return "no contact found to Delete";
 	}
 
-	@Override
-	public Contact updateContact(Contact contact) {
-
-		System.out.println("Enter the name :");
-		String name = sc.nextLine();
-		contact.setName(name);
-		System.out.println("Enter the mobile:");
-		String mobile = sc.nextLine();
-		contact.setMobile(mobile);
-		System.out.println("Enter the city name:");
-		String city = sc.nextLine();
-		contact.setCity(city);
-		return contact;
-	}
+//	@Override
+//	public Contact updateContact(Contact contact) {
+//
+//		System.out.println("Enter the name :");
+//		String name = sc.nextLine();
+//		contact.setName(name);
+//		System.out.println("Enter the mobile:");
+//		String mobile = sc.nextLine();
+//		contact.setMobile(mobile);
+//		System.out.println("Enter the city name:");
+//		String city = sc.nextLine();
+//		contact.setCity(city);
+//		return contact;
+//	}
 
 	@Override
 	public List<Contact> search(String name) {
@@ -88,6 +88,12 @@ public class ContactServiceImpl implements ContactService {
 			System.out.println("Sorted Successfully");
 			return contacts;
 		}
+		return null;
+	}
+
+	@Override
+	public Contact updateContact(int id) {
+		// TODO Auto-generated method stub
 		return null;
 	}
 }

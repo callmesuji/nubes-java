@@ -2,7 +2,7 @@ package com.nubes.internship.CrudOperationsUsingDatabaseConnection;
 
 import java.util.Scanner;
 
-public class CrupOperationsManager {
+public class CrudOperationsManager {
 	public static void main(String[] args) {
 		EmployeeStat obj = new EmployeeStat();
 		Scanner sc = new Scanner(System.in);

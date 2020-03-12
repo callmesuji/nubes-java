@@ -7,6 +7,9 @@ public class Contact {
 	private String mobile;
 	private String city;
 
+	public Contact() {
+	}
+
 	public Contact(String name, String mobile, String city) {
 		if (this.cid == null) {
 			this.cid = IDGenerator.getNewId();

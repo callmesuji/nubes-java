@@ -8,7 +8,7 @@ public interface ContactService {
 
 	List<Contact> getContacts();
 
-	Contact updateContact(Contact contact);
+	Contact updateContact(int id);
 
 	String deleteContact(Integer cid);
 
