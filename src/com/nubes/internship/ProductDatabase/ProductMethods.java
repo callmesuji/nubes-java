@@ -5,7 +5,7 @@ import java.util.List;
 public interface ProductMethods {
 	void addProducts();
 
-	void showProducts();
+	List<Product> showProducts();
 
 	void deleteProducts(int pid);
 

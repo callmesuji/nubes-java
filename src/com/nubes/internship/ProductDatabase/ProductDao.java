@@ -7,10 +7,14 @@ public interface ProductDao {
 
 	List<Product> showProducts();
 
-	Product deleteProduct(Product product);
+	Product deleteProduct(Integer pid);
 
 	Product updateProduct(Product product);
 
-	Product searchProduct(Product product);
+	List<Product> searchProduct(Integer pid);
+
+	boolean checkproduct(Integer id);
+
+	int getcount();
 
 }

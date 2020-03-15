@@ -9,13 +9,16 @@ public class Product {
 	public Product() {
 	}
 
-	public Product(String pname, Double price, Double discount) {
-		if (this.pid == null) {
-			this.pid = IDGenerator.getnewid();
-		}
+	public Product(Integer pid, String pname, Double price, Double discount) {
+		this.pid = pid;
 		this.pname = pname;
 		this.price = price;
 		this.discount = discount;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [pid=" + pid + ", pname=" + pname + ", price=" + price + ", discount=" + discount + "]";
 	}
 
 	public Integer getPid() {
@@ -48,11 +51,6 @@ public class Product {
 
 	public void setDiscount(Double discount) {
 		this.discount = discount;
-	}
-
-	@Override
-	public String toString() {
-		return "Product [pid=" + pid + ", pname=" + pname + ", price=" + price + ", discount=" + discount + "]";
 	}
 
 }

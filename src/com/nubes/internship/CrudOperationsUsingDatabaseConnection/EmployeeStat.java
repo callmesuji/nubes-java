@@ -1,6 +1,6 @@
 package com.nubes.internship.CrudOperationsUsingDatabaseConnection;
 
-import java.sql.*;  
+import java.sql.*;   
 import java.util.Scanner;
 
 public class EmployeeStat {
