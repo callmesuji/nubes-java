@@ -10,7 +10,7 @@ public class MembershipCard {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the bill amount : ");
-		int amount = sc.nextInt();
+		Double amount = sc.nextDouble();
 		System.out.println("Do you have a membership card?");
 		char ch = sc.next().charAt(0);
 		double discount;

@@ -10,20 +10,20 @@ public class CountOfNum {
 		System.out.println("Enter a number : ");
 		int num = sc.nextInt();
 		sc.close();
-		
-		count(num);
+
+		System.out.println(count(num));
 
 	}
 
 	public static int count(int num) {
-		if(num == 1) {
+		if (num == 1) {
 			return num;
-		}else if(num > 1) {
-			
+		} else if (num > 1) {
+
 		}
-		
+
 		return num;
-		
+
 	}
 
 }

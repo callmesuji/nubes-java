@@ -20,7 +20,6 @@ public class ProductMethodsImpl implements ProductMethods {
 		Integer id = idgen.getnewid();
 		Product product = new Product(id, pname, price, discount);
 		productdao.addProduct(product);
-
 	}
 
 	@Override

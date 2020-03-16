@@ -16,8 +16,7 @@ public class Manager {
 				switch (ch) {
 				case 1:
 					productmethods.addProducts();
-					
-					
+
 					while (true) {
 						System.out.println("DO YOU WANT TO CONTINUE (y | n)");
 						String s = sc.nextLine();
@@ -28,13 +27,11 @@ public class Manager {
 							break;
 						}
 					}
-					
-					
+
 					break;
 				case 2:
 					productmethods.showProducts();
-					
-					
+
 					while (true) {
 						System.out.println("DO YOU WANT TO CONTINUE (y | n)");
 						String s = sc.next();
@@ -50,21 +47,19 @@ public class Manager {
 							System.out.println("---------***--------------");
 						}
 					}
-					
-					
+
 					break;
 				case 3:
 					System.out.println(" Enter ID To Delete PRODUCT :");
-					if(sc.hasNextInt()) {
+					if (sc.hasNextInt()) {
 						int pid = sc.nextInt();
-						productmethods.deleteProducts(pid);						
-					}else {
+						productmethods.deleteProducts(pid);
+					} else {
 						System.out.println("ENTER ONLY INTEGER");
 						sc.next();
 						break;
 					}
-					
-					
+
 					while (true) {
 						System.out.println("DO YOU WANT TO CONTINUE (y | n)");
 						char c = sc.next().charAt(0);
@@ -75,20 +70,19 @@ public class Manager {
 							break;
 						}
 					}
-					
-					
+
 					break;
 				case 4:
 					System.out.println(" Enter The ID To UPDATE PRODUCT :");
-					if(sc.hasNextInt()) {
-					int u_id = sc.nextInt();
-					productmethods.updateProducts(u_id);
-					}else {
+					if (sc.hasNextInt()) {
+						int u_id = sc.nextInt();
+						productmethods.updateProducts(u_id);
+					} else {
 						System.out.println("ENTER ONLY INTEGER");
 						sc.next();
 						break;
 					}
-					
+
 					while (true) {
 						System.out.println("DO YOU WANT TO CONTINUE (y | n)");
 						char c = sc.next().charAt(0);
@@ -99,20 +93,19 @@ public class Manager {
 							break;
 						}
 					}
-					
-					
+
 					break;
 				case 5:
 					System.out.println("--- ENTER ID TO SEARCH PRODUCT ---");
-					if(sc.hasNextInt()) {
-					int s_id = sc.nextInt();
-					productmethods.searchProducts(s_id);
-					}else {
+					if (sc.hasNextInt()) {
+						int s_id = sc.nextInt();
+						productmethods.searchProducts(s_id);
+					} else {
 						System.out.println("ENTER ONLY INTEGER");
 						sc.next();
 						break;
 					}
-					
+
 					while (true) {
 						System.out.println("DO YOU WANT TO CONTINUE (y | n)");
 						char c = sc.next().charAt(0);
@@ -123,8 +116,7 @@ public class Manager {
 							break;
 						}
 					}
-					
-					
+
 					break;
 				case 6:
 					System.out.println("Exited Successfully");
@@ -134,7 +126,6 @@ public class Manager {
 
 				default:
 					System.out.println("PLEASE ENTER VALID INPUT");
-					sc.close();
 					break;
 				}
 			} else {

@@ -2,9 +2,7 @@ package com.nubes.internship.ProductDatabase;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.Scanner;
 
 public class ProductDaoImpl implements ProductDao {
